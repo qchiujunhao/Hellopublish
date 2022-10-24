@@ -1,5 +1,6 @@
 README.md
 setup.py
+data/gen.sh
 hello_publish/__init__.py
 hello_publish/helloworld.py
 hello_publish.egg-info/PKG-INFO
