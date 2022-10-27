@@ -4,6 +4,8 @@ def auto_gen():
     data = ['Afghanistan', 652090, 'AF', 'AFG']
     data2 = ['Afghanistansdss', 652090, 'AF', 'AFG']
 
+    data3 = ['cool', 652090, 'AF', 'AFG']
+
     with open('hello_publish/countries.csv', 'w', encoding='UTF8') as f:
         writer = csv.writer(f)
 
@@ -13,6 +15,7 @@ def auto_gen():
     # write the data
         writer.writerow(data)
         writer.writerow(data2)
+        writer.writerow(data3)
 
 
 if __name__ == "__main__":

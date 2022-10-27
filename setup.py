@@ -8,13 +8,15 @@ class Install_with_sym(install):
         install.run(self)
 if __name__ == '__main__':
     path = os.getcwd()
-    os.system("sh "+path+"/data/gen.sh")
+    print(path)
+    # os.system("sh "+path+"/data/gen.sh")
+    os.system("python "+path+"/data/gen.py")
     print('hisam!')
 
     setup(
         name='hello_publish',
-        version='0.1.2',
-        cmdclass={'install': Install_with_sym},
+        version='0.1.3',
+        #cmdclass={'install': Install_with_sym},
         packages=find_packages(include=['hello_publish', 'hello_publish.*']),
         scripts=['data/gen.sh'],
         include_package_data=True,
